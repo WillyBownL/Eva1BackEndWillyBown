@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from AppEva1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', views.index),
+    path('MH/', views.MH),
+    path('P3R/', views.P3R),
+    path('DS3/', views.DS3)
 ]
